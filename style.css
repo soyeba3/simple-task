@@ -1,0 +1,103 @@
+.container {
+  height: 100vh;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 8%;
+  padding: 0 10px;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 5px;
+}
+
+.account {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.image > img {
+  height: 40px;
+  width: 40px;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+}
+
+.status > .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.status > .name > .icon-settings {
+  font-size: 16px;
+  color: gray;
+  cursor: pointer;
+}
+
+.active-status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.blue-dot {
+  background-color: green;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+
+p {
+  margin: 0;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.call-to-action > * {
+  color: rgb(100, 98, 98);
+  cursor: pointer;
+}
+
+.icon-phone {
+  background-color: #2781cc;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: rgb(238, 233, 233);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.material-icons-outlined {
+  font-family: "Material Icons";
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
