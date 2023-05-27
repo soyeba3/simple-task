@@ -121,6 +121,10 @@ main {
   gap: 5px;
 }
 
+.conversation-from {
+  max-width: 60%;
+}
+
 .Friend-message {
   display: flex;
   flex-direction: row;
@@ -159,6 +163,10 @@ main {
   gap: 2px;
 }
 
+.my-message > * {
+  max-width: 60%;
+}
+
 .my-message > .first-message-me {
   background-color: #ccf7ff;
   padding: 8px 10px;
@@ -170,6 +178,22 @@ main {
   border-radius: 10px 0 0 10px;
   font-weight: 300;
   font-size: 14px;
+}
+
+.my-message > .forwarded-message {
+  background-color: #ccf7ff;
+  padding: 8px 10px;
+  border-radius: 10px 0 0 10px;
+  font-weight: 300;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  color: gray;
+}
+
+.forwarded-message > p {
+  padding: 5px 20px;
+  font-style: italic;
 }
 
 footer {
@@ -227,6 +251,7 @@ footer {
   display: flex;
   align-items: center;
   color: gray;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 480px) {
