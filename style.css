@@ -1,14 +1,20 @@
 .container {
-  height: 100vh;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 8%;
-  padding: 0 10px;
   border-bottom: 1px solid lightgray;
-  margin-bottom: 5px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 10px;
+  background-color: white;
+  z-index: 100;
 }
 
 .account {
@@ -16,6 +22,11 @@
   flex-direction: row;
   align-items: center;
   gap: 10px;
+}
+
+.account-image {
+  display: flex;
+  align-items: center;
 }
 
 .image > img {
@@ -35,6 +46,10 @@
   gap: 5px;
 }
 
+.name > p {
+  font-weight: 600;
+}
+
 .status > .name > .icon-settings {
   font-size: 16px;
   color: gray;
@@ -46,6 +61,10 @@
   flex-direction: row;
   align-items: center;
   gap: 5px;
+}
+
+.active-now {
+  line-height: 15px;
 }
 
 .blue-dot {
@@ -63,7 +82,7 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .call-to-action > * {
@@ -80,6 +99,149 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+main {
+  padding: 5% 4% 5% 2%;
+}
+
+.day {
+  text-align: center;
+}
+
+.day > span {
+  background-color: #f1f1f1;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.conversation {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.Friend-message {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.Friend-message > .image {
+  padding-top: 5px;
+}
+
+.time {
+  color: gray;
+}
+
+.text {
+  display: flex;
+  gap: 5px;
+}
+
+.text > p {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 0 10px 10px 10px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.emogi {
+  color: gray;
+  cursor: pointer;
+}
+
+.my-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.my-message > .first-message-me {
+  background-color: #ccf7ff;
+  padding: 8px 10px;
+  border-radius: 10px 10px 0 10px;
+}
+.my-message > span {
+  background-color: #ccf7ff;
+  padding: 8px 10px;
+  border-radius: 10px 0 0 10px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+}
+
+.input-field {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.input-field > input {
+  outline: none;
+  border: none;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  width: 100%;
+}
+
+.icon-footer {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icons {
+  color: grey;
+}
+
+.down-arrow {
+  position: fixed;
+  bottom: 12%;
+  right: 1%;
+  z-index: 99;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+
+@media only screen and (max-width: 480px) {
+  .mobile {
+    display: none !important;
+  }
+  .conversation-from {
+    width: 70%;
+  }
+  .my-message > span {
+    width: 70%;
+  }
+  main {
+    padding: 20% 0;
+  }
 }
 
 .material-icons-outlined {

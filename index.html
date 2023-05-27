@@ -6,16 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Task</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Google Material Icons  -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="container">
+      <!-- Navbar Start -->
+
       <nav class="navbar">
         <div class="account">
-          <div class="image">
+          <div class="image account-image">
             <img src="images/circle-cropped soyeb_profile.png" alt="thumnail" />
           </div>
           <div class="status">
@@ -32,9 +42,9 @@
           </div>
         </div>
         <div class="call-to-action">
-          <span class="material-icons-outlined"> search </span>
-          <span class="material-icons-outlined"> collections </span>
-          <span class="material-icons-outlined"> person_add_alt_1 </span>
+          <span class="material-icons-outlined mobile"> search </span>
+          <span class="material-icons-outlined mobile"> collections </span>
+          <span class="material-icons-outlined mobile"> person_add_alt_1 </span>
           <div class="icon-phone">
             <span class="material-icons-outlined"> videocam </span>
           </div>
@@ -43,9 +53,160 @@
           </div>
         </div>
       </nav>
+
+      <!-- Navbar End -->
+
       <main>
-        <div class="day">Today</div>
+        <div class="day"><span>Today</span></div>
+
+        <!-- Conversation Section  -->
+        <div class="conversation">
+          <!-- Friend Message  -->
+
+          <div class="Friend-message">
+            <div class="image">
+              <img
+                src="images/circle-cropped soyeb_profile.png"
+                alt="thumnail"
+              />
+            </div>
+            <div class="conversation-from">
+              <small class="time">Soyeb, 8.21 PM</small>
+              <div class="text">
+                <p>I can work new themes/plugins</p>
+                <span class="material-icons-outlined emogi">
+                  sentiment_satisfied_alt
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- My Message  -->
+
+          <div class="my-message">
+            <small class="time">8.21 PM</small>
+            <span class="first-message-me">Okay</span>
+            <span>Will you be available for test task?</span>
+          </div>
+
+          <!-- Friend Message  -->
+
+          <div class="Friend-message">
+            <div class="image">
+              <img
+                src="images/circle-cropped soyeb_profile.png"
+                alt="thumnail"
+              />
+            </div>
+            <div class="conversation-from">
+              <small class="time">Soyeb, 8.21 PM</small>
+              <div class="text">
+                <p>Yes please</p>
+                <span class="material-icons-outlined emogi">
+                  sentiment_satisfied_alt
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- My Message  -->
+
+          <div class="my-message">
+            <small class="time">8.21 PM</small>
+            <span class="first-message-me">Okay</span>
+            <span>I am working with developers based on monthly payment</span>
+            <span>I think you already discussed the price with Sumaiya?</span>
+          </div>
+
+          <!-- Friend Message  -->
+
+          <div class="Friend-message">
+            <div class="image">
+              <img
+                src="images/circle-cropped soyeb_profile.png"
+                alt="thumnail"
+              />
+            </div>
+            <div class="conversation-from">
+              <small class="time">Soyeb, 8.23 PM</small>
+              <div class="text">
+                <p>I am sorry, She didn't discussed with me about the price</p>
+                <span class="material-icons-outlined emogi">
+                  sentiment_satisfied_alt
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- My Message  -->
+
+          <div class="my-message">
+            <small class="time">8.24 PM</small>
+            <span class="first-message-me">Okay</span>
+            <span>Okay</span>
+            <span>what's your mothly salary expectation?</span>
+          </div>
+
+          <!-- Friend Message  -->
+
+          <div class="Friend-message">
+            <div class="image">
+              <img
+                src="images/circle-cropped soyeb_profile.png"
+                alt="thumnail"
+              />
+            </div>
+            <div class="conversation-from">
+              <small class="time">Soyeb, 8.27 PM</small>
+              <div class="text">
+                <p>
+                  As a freasher I have an expectation around $500 is completely
+                  ok.
+                </p>
+                <span class="material-icons-outlined emogi">
+                  sentiment_satisfied_alt
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- My Message  -->
+
+          <div class="my-message">
+            <small class="time">8.28 PM</small>
+            <span class="first-message-me">Okay</span>
+          </div>
+        </div>
       </main>
+
+      <div class="down-arrow">
+        <span class="material-icons-outlined"> expand_more </span>
+      </div>
+
+      <!-- Footer Section  -->
+
+      <footer>
+        <div class="input-field">
+          <span class="material-icons-outlined emogi">
+            sentiment_satisfied_alt
+          </span>
+          <input type="text" />
+          <span class="material-icons-outlined emogi"> edit_note </span>
+        </div>
+
+        <div class="icon-footer">
+          <span class="material-icons-outlined icons"> file_copy </span>
+        </div>
+        <div class="icon-footer">
+          <span class="material-icons-outlined icons"> keyboard_voice </span>
+        </div>
+        <div class="icon-footer">
+          <span class="material-icons-outlined icons"> contact_page </span>
+        </div>
+        <div class="icon-footer">
+          <span class="material-icons-outlined icons"> more_horiz </span>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
